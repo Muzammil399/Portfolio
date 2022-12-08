@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 1600px;
+    position: relative;
+}
+@font-face {
+    font-family: carmen sans light;
+    src: url(fonts/Carmen\ Sans\ Light.otf);
+}
+@font-face {
+font-family: carmen sans medium;
+src: url(fonts/Carmen\ Sans\ Medium.otf);
+}
+@font-face {
+font-family: carmen sans bold;
+src: url(fonts/Carmen\ Sans\ Bold.otf);
+}
+@font-face {
+font-family: montserrat extra bold;
+src: url(fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+font-family: montserrat bold;
+src: url(fonts/Montserrat-Bold-2.ttf);
+}
+@font-face {
+font-family: montserrat semi bold;
+src: url(fonts/Montserrat-SemiBold.ttf);
+}
+.header {
+display: flex;
+flex-direction: row;
+align-items: center;
+background-color: rgba(255, 255, 255, 0.805)    ;
+}
+.logo {
+width: 130px;
+filter: invert(100%);
+}
+.logo-div {
+width: 500px;
+text-align: center;
+}
+.nav-div {
+flex: 1;
+text-align: center;
+}
+.nav-a-home {
+text-decoration: none;
+color: black;
+font-family: carmen sans medium;
+}
+.nav-a-browse {
+text-decoration: none;
+color: black;
+font-family: carmen sans medium;
+}
+.nav-a-selling {
+text-decoration: none;
+color: black;
+font-family: carmen sans medium;
+}
+.nav-a-support {
+text-decoration: none;
+color: black;
+font-family: carmen sans medium;
+border-top: none;
+border-bottom: solid;
+padding-bottom: 6px;
+border-color: #3600ff;
+}
+.nav-a-sign {
+text-decoration: none;
+color: black;
+font-family: carmen sans medium;
+}
+li {
+display: inline-block;
+margin: 20px;
+}
+.sign-up-button {
+border: none;
+background-color: #3600ff;;
+color: white;
+border-radius: 20px;
+font-family: carmen sans medium;
+font-size: 16px;
+padding: 8px 10px 8px 10px;
+cursor: pointer;
+transition: 0.2s ease-in-out;
+}
+.sign-up-button:hover {
+text-decoration: none;
+color: #3600ff;
+font-family: carmen sans medium;
+background-color: white;
+border: solid;
+border-width: 2px;
+}
+.pt {
+    width: 1200px;
+    margin-left: 160px;
+}
+.pt-div {
+    position: relative;
+}
+.love {
+    font-family: montserrat semi bold;
+    color: #3600ff;
+    font-size: 40px;
+    position: absolute;
+    top: 18%;
+    left: 650px;
+}
+.hear {
+    font-family: montserrat semi bold;
+    font-size: 40px;
+    position: absolute;
+    top: 33%;
+    left: 630px;
+}
+.need-help-div {
+    text-align: center;
+}
+.need-help {
+    display: inline-block;
+    font-family: carmen sans bold;
+    border-bottom: solid;
+    border-color: #3600ff;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    border-width: 5px;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+h3 {
+    font-family: carmen sans light;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.whatsapp-div {
+    margin-top: 18px;
+    margin-left: 32px;
+}
+.get-in-div {
+    text-align: center;
+}
+.get-in {
+    display: inline-block;
+    font-family: carmen sans bold;
+    border-bottom: solid;
+    border-color: #3600ff;
+    padding-bottom: 4px;
+    border-width: 5px;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+.cr-div {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+    margin-left: 50px;
+}
+.c {
+    background-color: #f5f5f5;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+    padding: 35px 30px 30px 30px;
+}
+.r {
+    background-color: rgba(200, 200, 200, 0.273);
+    border-radius: 30px;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 400px;
+}
+.cc-title {
+    font-family: carmen sans light;
+}
+.info-cc {
+    font-family: carmen sans light;
+    margin-top: 20px;
+    font-size: 19px;
+}
+.infoo-cc {
+    font-family: carmen sans light;
+    margin-top: 20px;
+    font-size: 19px;
+}
+.footer-div {
+    position:absolute;
+    bottom: 0;
+    background-color:black;
+    height: 400px;
+    width: 100%;
+}
+.container {
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 400px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h4 {
+    font-family: carmen sans light;
+    margin: 50px 50px 50px 50px;
+    color: white;
+    border-bottom: solid;
+    border-color:#3600ff;
+    border-width: 5px;
+    padding-bottom: 8px;
+}
+.serf-info {
+    width: 100px;
+    font-family: carmen sans light;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left:200px;
+    cursor: pointer;
+}
+.com-info {
+    width: 100px;
+    font-family: carmen sans light;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left:475px;
+    cursor: pointer;
+}
+.help-info {
+    width: 100px;
+    font-family: carmen sans light;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left:712px;
+    cursor: pointer;
+}
+.more-info {
+    width: 100px;
+    font-family: carmen sans light;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left:985px;
+    cursor: pointer;
+}

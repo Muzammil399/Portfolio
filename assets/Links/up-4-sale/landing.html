@@ -1,0 +1,288 @@
+
+<html>
+    <head>
+        <title>UP4sale-home</title>
+        <style>
+
+          * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                background-color: #E4E8E7;
+                height: 2000px;
+            }
+            @font-face {
+                font-family: carmen sans light;
+                src: url(fonts/Carmen\ Sans\ Light.otf);
+            }
+            @font-face {
+                font-family: carmen sans medium;
+                src: url(fonts/Carmen\ Sans\ Medium.otf);
+            }
+            @font-face {
+                font-family: carmen sans bold;
+                src: url(fonts/Carmen\ Sans\ Bold.otf);
+            }
+            @font-face {
+                font-family: montserrat extra bold;
+                src: url(fonts/Montserrat-ExtraBold.ttf);
+            }
+            @font-face {
+                font-family: montserrat bold;
+                src: url(fonts/Montserrat-Bold-2.ttf);
+            }
+            @font-face {
+            font-family: montserrat semi bold;
+            src: url(fonts/Montserrat-SemiBold.ttf);
+            }
+            p {
+                font-family: montserrat extra bold;
+                color: white;
+            
+            }
+            .intro {
+                background-color: #0857D3 ;
+                width: 100%;
+                height: 550px;
+                margin: 0;
+            }
+            .ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0%;
+                top: 0;
+                padding: 20px;
+                margin-top: 34px;
+            }
+            li {
+                display: inline-block;
+                padding: 0 20px 0 20px;
+            }
+            a {
+                color: rgb(116, 190, 244);
+                text-decoration: none;
+                font-size: 16px;
+                font-family: carmen sans medium;
+            }
+            .header {
+                margin-top: 0;
+            }
+            .home {
+                border-bottom: solid;
+                border-width: 1px;
+                border-color: rgba(255, 255, 255, 0.805);
+                padding-bottom: 10px;
+            }
+            .home-a {
+                color: rgba(255, 255, 255, 0.805);
+            }
+            .logo {
+                width: 125px;
+                object-fit: fill;
+                top: 0;
+                margin: 0;
+                padding: 0;
+            }
+            .logo-div {
+                display: inline-block;
+                width: 700px;
+                padding-left: 200px;
+            }
+            .nav {
+                display: flex;
+                flex-direction: row;
+                
+            }
+            nav {
+                flex: 1;
+            }
+            .ft {
+                font-family: montserrat extra bold;
+                color: rgb(236, 236, 236);
+                font-size: 40px;
+                line-height: 35px;
+                word-spacing: 2px;
+                margin-bottom: 0;
+            }
+            .ft-div {
+                display: inline-block;
+                width: 750px;
+                position: relative;
+                left: 130;
+                top: 140px;
+            }
+            .st {
+                font-size: 20px;
+                color: rgb(116, 190, 244);
+                font-family: carmen sans light;
+                line-height: 22px;
+            }
+            .st-div {
+                display: block;
+                position: relative;
+                width: 400px;
+                left: 130px;
+                top: 150px;
+            }
+            .why {
+                font-family: montserrat bold;
+                font-size: 26px;
+                color: #1d427d;
+            }
+            .why-div {
+                top: 100px;
+                left: auto;
+                text-align: center;
+                display: block;
+                margin-top: 60px;
+                margin-bottom: 100px;
+            }
+            .girl {
+                width: 600px;
+                mix-blend-mode:multiply;
+            }
+            .girl-div {
+                display: inline-block;
+                position: relative;
+                left: 800;
+                top: -162;
+                background-color: #0857D3;
+                
+            }
+            .main-box-div {
+                display: flex;
+                flex-direction: row;
+                column-gap: 40px;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .box {
+                display: inline-block;
+                width: 300px;
+                text-align: center;
+                background-color: rgb(217, 224, 230);
+                padding-top: 20px;
+                padding-bottom: 50px;
+                border-radius: 30px;
+            }
+            .heading {
+                font-family: montserrat semi bold;
+                font-size: 24px;
+                color: #3D4CF5;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .des {
+                font-family: carmen sans light;
+                font-size: 18px;
+                color: black;
+            }
+            .des-div {
+                text-align: center;
+            }
+            .heading1 {
+                font-family: montserrat semi bold;
+                font-size: 24px;
+                color: rgb(192, 127, 52);
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .des1 {
+                font-family: carmen sans light;
+                font-size: 18px;
+                color: black;
+            }
+            .des-div1 {
+                text-align: center;
+            }
+            .heading2 {
+                font-family: montserrat semi bold;
+                font-size: 24px;
+                color: #FF4444 ;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .des2 {
+                font-family: carmen sans light;
+                font-size: 18px;
+                color: black;
+            }
+            .des-div2 {
+                text-align: center;
+            }
+            .box {
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="intro">
+            <div class="nav">
+                <div class="logo-div"><img class="logo" src="images/logo-mod.png" alt=""></div>
+                <nav> 
+                <ul class="ul">
+                    <li class="home"><a class="home-a" href="landing.html">Home</a></li>
+                    <li><a href="sign-in.html">Browse</a></li>
+                    <li><a href="#">Start selling</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Sign-in</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div class="text-div">
+                <div class="ft-div"><p class="ft">10,000,00+ HAPPY USERS WORLDWIDE.</p></div>
+                <div class="st-div"><p class="st">More than 500,000 Proud sellers and buisnesses.</p></div>
+            </div>
+            <div class="girl-div"><img class="girl" src="images/girl-modified.png"></div>
+        </div>
+        <div class="why-div">
+            <p class="why">Why Us</p>
+        </div>
+        <div class="main-box-div">
+            <div class="box">
+                <div class="logo-divv">
+                    <i class="fa-solid fa-globe fa-3x"></i>
+                </div>
+                <div class="text">
+                    <div class="heading-div">
+                        <p class="heading">Trade world-wide</p>
+                    </div>
+                    <div class="des-div">
+                        <p class="des">Expand your buisness <br> world-wide across 190 <br> UP4sale markets such as <br> UL,UK, etc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="logo-divv">
+                    <i class="fa-solid fa-money-bill-trend-up fa-3x"></i>
+                </div>
+                <div class="text">
+                    <div class="heading-div">
+                        <p class="heading1">High profitability</p>
+                    </div>
+                    <div class="des-div1">
+                        <p class="des1">Sell directly to the <br> consumer at a <br> satisfiable price fixed <br> by you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="logo-divv">
+                    <i class="fa-solid fa-sack-dollar fa-3x"></i>
+                </div>
+                <div class="text">
+                    <div class="heading-div">
+                        <p class="heading2">Immediate payments</p>
+                    </div>
+                    <div class="des-div2">
+                        <p class="des2">Receive your payment in your<br> pioneer account with-in 2<br> buisness day post payment <br> by the buyer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/53439eafb5.js" crossorigin="anonymous"></script>
+    </body>
+</html>

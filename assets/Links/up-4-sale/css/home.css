@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 2100px;
+}
+@font-face {
+        font-family: carmen sans light;
+        src: url(fonts/Carmen\ Sans\ Light.otf);
+}
+@font-face {
+    font-family: carmen sans medium;
+    src: url(fonts/Carmen\ Sans\ Medium.otf);
+    }
+@font-face {
+    font-family: carmen sans bold;
+    src: url(fonts/Carmen\ Sans\ Bold.otf);
+}
+@font-face {
+    font-family: montserrat extra bold;
+    src: url(fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: montserrat bold;
+    src: url(fonts/Montserrat-Bold-2.ttf);
+}
+@font-face {
+    font-family: montserrat semi bold;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+}
+.main-div {
+    position: relative;
+}
+.header {
+display: flex;
+flex-direction: row;
+align-items: center;
+background-color: rgba(255, 255, 255, 0.805)    ;
+}
+.logo {
+width: 130px;
+filter: invert(100%);
+}
+.logo-div {
+width: 500px;
+text-align: center;
+}
+.nav-div {
+flex: 1;
+text-align: center;
+}
+.nav-a-home {
+text-decoration: none;
+color: black;
+font-family: carmen sans medium;
+border-top: none;
+border-bottom: solid;
+padding-bottom: 6px;
+border-color: #3600ff;
+}
+.nav-a-browse {
+text-decoration: none;
+color: black;
+font-family: carmen sans medium;
+}
+.nav-a-selling {
+text-decoration: none;
+color: black;
+font-family: carmen sans medium;
+}
+.nav-a-support {
+text-decoration: none;
+color: black;
+font-family: carmen sans medium;
+}
+.nav-a-sign {
+text-decoration: none;
+color: black;
+font-family: carmen sans medium;
+}
+li {
+display: inline-block;
+margin: 20px;
+}
+.sign-up-button {
+border: none;
+background-color: #3600ff;;
+color: white;
+border-radius: 20px;
+font-family: carmen sans medium;
+font-size: 16px;
+padding: 8px 10px 8px 10px;
+cursor: pointer;
+transition: 0.2s ease-in-out;
+}
+.sign-up-button:hover {
+text-decoration: none;
+color: #3600ff;
+font-family: carmen sans medium;
+background-color: white;
+border: solid;
+border-width: 2px;
+}
+.blue-part-div {
+    height: 450px;
+    background-color: #0858d3;
+    position: relative;
+}
+.girl {
+    width: 580px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    bottom: 0;
+    left: 900px;
+    overflow: hidden;
+}
+.girl-div {
+    background-color: #0858d3;
+}
+.text-div {
+    position: absolute;
+    left: 120px;
+    bottom: 50%;
+}
+.ft {
+    font-family: montserrat extra bold;
+    color: rgb(236, 236, 236);
+    font-size: 40px;
+    line-height: 40px;
+    word-spacing: 2px;    
+    margin-bottom: 0;
+    width: 550px;
+}
+.st {
+    font-size: 20px;
+    color: rgb(116, 190, 244);
+    font-family: carmen sans light;
+    line-height: 22px;
+    width: 400px;
+}
+.why {
+    font-family: montserrat bold;
+    font-size: 26px;
+    color: #1d427d; 
+}
+.why-div {
+    top: 100px;
+    left: auto;
+    text-align: center;        
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.titles {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+}    
+.titles div {
+    margin: 20px;
+}
+.tww-div {
+    padding-top: 25px;
+    height: 300px;
+    text-align: center;
+    border-radius: 22px;
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+.hp-div {
+    padding-top: 25px;
+    height: 300px;
+    text-align: center;
+    border-radius: 22px;
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ip-div {
+    padding-top: 25px;
+    height: 300px;
+    text-align: center;
+    border-radius: 22px;
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+.pp-div {
+    padding-top: 25px;
+    height: 300px;
+    text-align: center;
+    border-radius: 22px;
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+.gp-div {
+    padding-top: 25px;
+    height: 300px;
+    text-align: center;
+    border-radius: 22px;
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+.dsp-div {
+    padding-top: 25px;
+    height: 300px;
+    text-align: center;
+    border-radius: 22px;
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+.heading {
+    font-family: montserrat semi bold;
+    font-size: 24px;
+    color: #3D4CF5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.des {
+    font-family: carmen sans light;
+    font-size: 18px;
+    color: black;
+}
+.des-div {
+    text-align: center;
+}
+.heading1 {
+    font-family: montserrat semi bold;
+    font-size: 24px;
+    color: #22b800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.des1 {
+    font-family: carmen sans light;
+    font-size: 18px;
+    color: black;
+}
+.des-div1 {
+    text-align: center;
+}
+.heading2 {
+    font-family: montserrat semi bold;
+    font-size: 24px;
+    color: #FF4444 ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.des2 {
+    font-family: carmen sans light;
+    font-size: 18px;
+    color: black;
+}
+.des-div2 {
+    text-align: center;
+}
+.heading3 {
+    font-family: montserrat semi bold;
+    font-size: 24px;
+    color: #801cae ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.des3 {
+    font-family: carmen sans light;
+    font-size: 18px;
+    color: black;
+}
+.des-div3 {
+    text-align: center;
+}
+.heading4 {
+    font-family: montserrat semi bold;
+    font-size: 24px;
+    color:  #0052b8 ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.des4 {
+    font-family: carmen sans light;
+    font-size: 18px;
+    color: black;
+}
+.des-div4 {
+    text-align: center;
+}
+.heading5 {
+    font-family: montserrat semi bold;
+    font-size: 24px;
+    color: #00a2a8 ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.des5 {
+    font-family: carmen sans light;
+    font-size: 18px;
+    color: black;
+}
+.des-div5 {
+    text-align: center;
+}
+.footer-div {
+    position:absolute;
+    bottom: 0;
+    background-color:black;
+    height: 400px;
+    width: 100%;
+}
+.container {
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 400px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h4 {
+    font-family: carmen sans light;
+    margin: 50px 50px 50px 50px;
+    color: white;
+    border-bottom: solid;
+    border-color:#3600ff;
+    border-width: 5px;
+    padding-bottom: 8px;
+}
+.serf-info {
+    width: 100px;
+    font-family: carmen sans light;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left:200px;
+    cursor: pointer;
+}
+.com-info {
+    width: 100px;
+    font-family: carmen sans light;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left:475px;
+    cursor: pointer;
+}
+.help-info {
+    width: 100px;
+    font-family: carmen sans light;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left:712px;
+    cursor: pointer;
+}
+.more-info {
+    width: 100px;
+    font-family: carmen sans light;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left:985px;
+    cursor: pointer;
+}

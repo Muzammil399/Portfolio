@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ef46bd9d1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      :root {
+        --transparent: transparent;
+      }
+
+      body {
+        font-family: poppins;
+        text-align: center;
+        background-color: #16213e;
+        color: #e94560;
+      }
+
+      h1 {
+        font-family: poppins;
+      }
+
+      .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin-top: 0;
+      }
+
+      p {
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+      button {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 16px 40px;
+        font-family: poppins;
+        font-weight: 700;
+        background-color: transparent;
+        cursor: pointer;
+        border: 4px solid #e94560;
+        border-radius: 99999px;
+        transition: all 0.2s ease-in-out;
+        margin-top: 50px;
+        color: #e94560;
+      }
+
+      button:active {
+        opacity: 0.5;
+      }
+
+      .rps-wrap {
+        border: 2px solid #e94560;
+        padding: 60px;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+
+      .sub-heading {
+        font-size: 35px;
+        padding: 0;
+        margin-bottom: 40px;
+      }
+
+      .highlighted {
+        padding: 60px;
+        cursor: pointer;
+        border-radius: 20px;
+        border: 6px solid #e94560;
+      }
+
+      .mt-50px {
+        margin-top: 50px;
+      }
+
+      .rps-wrap-two {
+        border: 2px solid #e94560;
+        padding: 60px;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+
+      .highlighted-two {
+        padding: 60px;
+        cursor: pointer;
+        border-radius: 20px;
+        border: 6px solid #e94560;
+      }
+
+      #result-element {
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .score-para {
+        font-size: 35px;
+      }
+
+      .score {
+        padding: 10px 20px 0px 20px;
+      }
+
+      .fs-40px {
+        font-size: 100px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sub-head {
+        margin: 0;
+      }
+
+      .gap {
+        gap: 180px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .wrap {
+          flex-wrap: wrap;
+        }
+
+        .gap {
+          gap: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 class="sub-heading" id="sub-heading">Player One Choice:</h2>
+    <div class="wrap">
+      <div class="rps-wrap" id="rock-element" onclick="changeBorderRock()">
+        <i class="fa-regular fa-hand-back-fist fa-6x"></i>
+      </div>
+      <div class="rps-wrap" id="paper-element" onclick="changeBorderpaper()">
+        <i class="fa-regular fa-hand fa-6x"></i>
+      </div>
+      <div
+        class="rps-wrap"
+        id="scissors-element"
+        onclick="changeBorderScissors()"
+      >
+        <i class="fa-regular fa-hand-scissors fa-6x"></i>
+      </div>
+    </div>
+    <h2 class="sub-heading" id="sub-heading-2">Player Two Choice:</h2>
+    <div class="wrap mt-50px">
+      <div
+        class="rps-wrap-two"
+        id="rock-element-two"
+        onclick="changeBorderRockTwo()"
+      >
+        <i class="fa-regular fa-hand-back-fist fa-6x"></i>
+      </div>
+      <div
+        class="rps-wrap-two"
+        id="paper-element-two"
+        onclick="changeBorderPaperTwo()"
+      >
+        <i class="fa-regular fa-hand fa-6x"></i>
+      </div>
+      <div
+        class="rps-wrap-two"
+        id="scissors-element-two"
+        onclick="changeBorderScissorsTwo()"
+      >
+        <i class="fa-regular fa-hand-scissors fa-6x"></i>
+      </div>
+    </div>
+    <button onclick="doSomeThing()">Submit</button>
+    <h1 id="result-element"></h1>
+    <div class="wrap gap">
+      <div class="rps-wrap score">
+        <div class="">
+          <p class="score-para sub-head">Score Player One:</p>
+        </div>
+        <div class="">
+          <p class="score-para fs-40px" id="player-one-counter">0</p>
+        </div>
+      </div>
+      <div class="rps-wrap score">
+        <div class="">
+          <p class="score-para sub-head">Score Player Two:</p>
+        </div>
+        <div class="">
+          <p class="score-para fs-40px" id="player-two-counter">0</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      let rockElement = document.getElementById("rock-element");
+      let paperElement = document.getElementById("paper-element");
+      let scissorsElement = document.getElementById("scissors-element");
+      let rockElementTwo = document.getElementById("rock-element-two");
+      let paperElementTwo = document.getElementById("paper-element-two");
+      let scissorsElementTwo = document.getElementById("scissors-element-two");
+      let currentMovePlayerOne;
+      let currentMovePlayerTwo;
+      let resultElement = document.getElementById("result-element");
+      let moves = ["rock", "paper", "scissors"];
+      let result = { rock: "scissors", paper: "rock", scissors: "paper" };
+      let scorePlayerOne = 0;
+      let scorePlayerTwo = 0;
+      let playerOneCounter = document.getElementById("player-one-counter");
+      let playerTwoCounter = document.getElementById("player-two-counter");
+      function changeBorderRock() {
+        rockElement.className = "highlighted";
+        paperElement.className = "rps-wrap";
+        scissorsElement.className = "rps-wrap";
+      }
+      function changeBorderpaper() {
+        paperElement.className = "highlighted";
+        rockElement.className = "rps-wrap";
+        scissorsElement.className = "rps-wrap";
+      }
+      function changeBorderScissors() {
+        scissorsElement.className = "highlighted";
+        rockElement.className = "rps-wrap";
+        paperElement.className = "rps-wrap";
+      }
+      function changeBorderRockTwo() {
+        rockElementTwo.className = "highlighted-two";
+        paperElementTwo.className = "rps-wrap-two";
+        scissorsElementTwo.className = "rps-wrap-two";
+      }
+      function changeBorderPaperTwo() {
+        paperElementTwo.className = "highlighted-two";
+        rockElementTwo.className = "rps-wrap-two";
+        scissorsElementTwo.className = "rps-wrap-two";
+      }
+      function changeBorderScissorsTwo() {
+        scissorsElementTwo.className = "highlighted-two";
+        rockElementTwo.className = "rps-wrap-two";
+        paperElementTwo.className = "rps-wrap-two";
+      }
+      function doSomeThing() {
+        if (rockElement.className == "highlighted") {
+          currentMovePlayerOne = moves[0];
+        } else if (paperElement.className == "highlighted") {
+          currentMovePlayerOne = moves[1];
+        } else if (scissorsElement.className == "highlighted") {
+          currentMovePlayerOne = moves[2];
+        }
+        console.log(currentMovePlayerOne);
+        if (rockElementTwo.className == "highlighted-two") {
+          currentMovePlayerTwo = moves[0];
+        } else if (paperElementTwo.className == "highlighted-two") {
+          currentMovePlayerTwo = moves[1];
+        } else if (scissorsElementTwo.className == "highlighted-two") {
+          currentMovePlayerTwo = moves[2];
+        }
+        if (currentMovePlayerOne == currentMovePlayerTwo) {
+          resultElement.innerHTML = "Draw!";
+        } else if (currentMovePlayerOne == result[currentMovePlayerTwo]) {
+          scorePlayerTwo += 1;
+          resultElement.innerHTML = "Player two wins";
+        } else {
+          scorePlayerOne += 1;
+          resultElement.innerHTML = "Player one wins";
+        }
+        playerOneCounter.innerHTML = scorePlayerOne;
+        playerTwoCounter.innerHTML = scorePlayerTwo;
+      }
+    </script>
+  </body>
+</html>

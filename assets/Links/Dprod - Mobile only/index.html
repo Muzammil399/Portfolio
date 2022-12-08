@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+        
+        Main meta tags
+
+    -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dprod - Digital product design agency</title>
+  <!--
+        
+        Google fonts link
+    
+    -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!--
+
+        ionicon link
+
+
+    -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- 
+        
+        css and js link
+    
+    -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#"><img src="assets/images/logo.svg" alt="dprod logo" /></a>
+      <div class="main-header-desktop">
+        <li><a class="footer-general custom-text" href="">HOME</a></li>
+        <li><a class="footer-general custom-text" href="">ABOUT</a></li>
+        <li><a class="footer-general custom-text" href="">SERVICES</a></li>
+        <li><a class="footer-general custom-text" href="">BLOG</a></li>
+        <button class="header-button-desk">Contact Us</button>
+      </div>
+      <button class="mobile-nav-button" id="navigation">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+    </div>
+  </header>
+  <section name="mobile-sidebar">
+    <div id="my-container" class="mobile-nav">
+      <p class="navbar-title">Main Menu</p>
+      <a class="nabar-links" href="#">Home</a>
+      <a class="nabar-links" href="#">About</a>
+      <a class="nabar-links" href="#">Services</a>
+      <a class="nabar-links" href="#">Blog</a>
+    </div>
+    <div class="shadow-2" id="shadow"></div>
+  </section>
+  <div class="main-divder">
+    <section name="hero-section" class="hero-section">
+      <div>
+        <h1 class="hero-title">
+          Digital <span class="color-orange">product</span> design agency
+        </h1>
+        <p class="hero-sub-heading">
+          Create live segments and target the right people for messages based
+          on their behaviors.
+        </p>
+        <button class="hero-button">Get Started</button>
+      </div>
+      <div class="wrapper-image">
+        <img class="hero-image" src="assets/images/hero-banner.png" alt="" />
+        <img src="assets/images/hero-shape-1.svg" class="hero-shape-svg" alt="" />
+      </div>
+    </section>
+    <section name="services-section" class="services">
+      <div class="services-container full-bleed">
+        <div class="flex-services-intro">
+          <h2 class="services-title">
+            Our included <span class="color-orange">service</span>.
+          </h2>
+          <p class="services-sub-heading">
+            Aliquam tristique libero at dui sodales, et placerat orci
+            lobortis. Donec metus lorem, vulputate at sapien sit amet, auctor
+            iaculis lorem.
+          </p>
+        </div>
+        <div class="services-carts-container">
+          <div class="services-carts">
+            <img src="assets/images/service-1.svg" alt="" />
+            <p class="carts-title">Mobile Apps</p>
+            <p class="carts-info">
+              We design professional looking yet simple Logo.
+            </p>
+          </div>
+          <div class="services-carts">
+            <img src="assets/images/service-2.svg" alt="" />
+            <p class="carts-title">Branding Strategy</p>
+            <p class="carts-info">
+              We design professional looking yet simple Logo.
+            </p>
+          </div>
+          <div class="services-carts">
+            <img src="assets/images/service-3.svg" alt="" />
+            <p class="carts-title">Graphics Design</p>
+            <p class="carts-info">
+              We design professional looking yet simple Logo.
+            </p>
+          </div>
+          <div class="services-carts z-index-25">
+            <img src="assets/images/service-4.svg" alt="" />
+            <p class="carts-title">Online Marketing</p>
+            <p class="carts-info">
+              We design professional looking yet simple Logo.
+            </p>
+          </div>
+        </div>
+        <img src="assets/images/circle-shape.svg" class="circle-shape-services" alt="" />
+      </div>
+    </section>
+    <section class="about-section" name="about-section">
+      <div class="about-images relative">
+        <div class="relative">
+          <img src="assets/images/banner-shape.svg" class="image-border-design" alt="" />
+          <img src="assets/images/about-banner.png" class="about-main-image" alt="" />
+        </div>
+      </div>
+      <div class="about-info-container relative">
+        <div class="about-title-container">
+          <p class="about-title">
+            We've been helping
+            <span class="color-orange">customers</span>
+            globally.
+          </p>
+        </div>
+        <p class="about-sub-info">
+          Aliquam tristique libero at dui sodales, et placerat orci lobortis.
+          Donec metus lorem, vulputate at sapien sit amet, auctor iaculis
+          lorem.
+        </p>
+        <button class="about-button">More About Us</button>
+      </div>
+    </section>
+    <section class="project-section full-bleed">
+      <p class="project-title-main">
+        Our recent <span class="color-orange">projects</span>.
+      </p>
+      <p class="project-sub-info">
+        Aliquam tristique libero at dui sodales, et placerat orci lobortis.
+        Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem.
+      </p>
+      <p class="project-sub-info flex">
+        Show More Projects
+        <ion-icon style="display: inline-block; padding-left: 5px; font-size: 16px;" name="arrow-forward"
+          aria-hidden="true"></ion-icon>
+      </p>
+      <div class="project-carts-container">
+        <div class="project-cart layout hover">
+          <div class="project-display-div height-changer">
+            <div class="project-image1 scale"></div>
+          </div>
+          <div class="project-cart-info">
+            <div>
+              <div>
+                <p class="project-title">Plastic Credit Card</p>
+              </div>
+              <p class="project-info">Identity, Mockup</p>
+            </div>
+            <button class="project-arrow">
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="project-cart layout hover">
+          <div class="project-display-div height-changer">
+            <div class="project-image2 scale"></div>
+          </div>
+          <div class="project-cart-info">
+            <div>
+              <div>
+                <p class="project-title width">3D Illustration</p>
+              </div>
+              <p class="project-info">Development, Mobile App</p>
+            </div>
+            <button class="project-arrow">
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="project-cart layout2 hover">
+          <div class="project-display-div">
+            <div class="project-image3 scale"></div>
+          </div>
+          <div class="project-cart-info">
+            <div>
+              <div>
+                <p class="project-title">Statistics Mobile App</p>
+              </div>
+              <p class="project-info">Development, Mobile App</p>
+            </div>
+            <button class="project-arrow">
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="project-cart layout2 hover">
+          <div class="project-display-div">
+            <div class="project-image4 scale"></div>
+          </div>
+          <div class="project-cart-info">
+            <div>
+              <div>
+                <p class="project-title">Color Blending Effect</p>
+              </div>
+              <p class="project-info">Design, Graphics</p>
+            </div>
+            <button class="project-arrow">
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="project-cart layout2 hover">
+          <div class="project-display-div">
+            <div class="project-image5 scale"></div>
+          </div>
+          <div class="project-cart-info">
+            <div>
+              <div>
+                <p class="project-title">3D Animation</p>
+              </div>
+              <p class="project-info">Design, Dimension</p>
+            </div>
+            <button class="project-arrow">
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog-section">
+      <div class="blog-intro-container">
+        <p class="blog-title-main">
+          Our inside <span class="color-orange">news</span>.
+        </p>
+        <p class="blog-sub-info flex blog-sub-mod">
+          Check Our All News
+          <ion-icon style="display: inline-block; padding-left: 5px; font-size: 16px;" name="arrow-forward"
+            aria-hidden="true"></ion-icon>
+        </p>
+      </div>
+      <div class="blog-grid-container">
+        <div class="blog-cart">
+          <div class="container-button-image-blog relative">
+            <div class="blog-display-div hover">
+              <div class="blog-image1 scale"></div>
+            </div>
+            <button class="blog-button">GRID LAYOUT</button>
+          </div>
+          <div class="blog-profile-info-container">
+            <div class="flex" style="gap: 5px;">
+              <img src="assets/images/author-1.png" width="20px" alt="" />
+              <p class="blog-info">Alice Williams</p>
+            </div>
+            <div class="flex" style="gap: 6px; margin-left: 1px;">
+              <ion-icon style="font-size: 18px;" name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+              <p class="blog-info">December 20, 2022</p>
+            </div>
+            <p class="blog-title hover-underline">
+              Designer's Checklist for Every UX Project.
+            </p>
+            <p class="blog-sub-info flex">
+              Read more
+              <ion-icon style="padding-left: 5px; font-size: 16px;" name="arrow-forward" aria-hidden="true"></ion-icon>
+            </p>
+          </div>
+        </div>
+        <div class="blog-cart">
+          <div class="container-button-image-blog relative">
+            <div class="blog-display-div hover">
+              <div class="blog-image2 scale"></div>
+            </div>
+            <button class="blog-button">GRID LAYOUT</button>
+          </div>
+          <div class="blog-profile-info-container">
+            <div class="flex" style="gap: 5px;">
+              <img src="assets/images/author-2.png" width="20px" alt="" />
+              <p class="blog-info">Jaxson Geldit</p>
+            </div>
+            <div class="flex" style="gap: 6px; margin-left: 1px;">
+              <ion-icon style="font-size: 18px;" name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+              <p class="blog-info">November 17, 2022</p>
+            </div>
+            <p class="blog-title hover-underline">
+              Designer's Checklist for Every UX Project.
+            </p>
+            <p class="blog-sub-info flex">
+              Read more
+              <ion-icon style="padding-left: 5px; font-size: 16px;" name="arrow-forward" aria-hidden="true"></ion-icon>
+            </p>
+          </div>
+        </div>
+        <div class="blog-cart">
+          <div class="container-button-image-blog relative">
+            <div class="blog-display-div hover">
+              <div class="blog-image3 scale"></div>
+            </div>
+            <button class="blog-button">GRID LAYOUT</button>
+          </div>
+          <div class="blog-profile-info-container">
+            <div class="flex" style="gap: 5px;">
+              <img src="assets/images/author-2.png" width="20px" alt="" />
+              <p class="blog-info">Cooper Saris</p>
+            </div>
+            <div class="flex" style="gap: 6px; margin-left: 1px;">
+              <ion-icon style="font-size: 18px;" name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+              <p class="blog-info">November 17, 2022</p>
+            </div>
+            <p class="blog-title hover-underline">
+              Designer's Checklist for Every UX Project.
+            </p>
+            <p class="blog-sub-info flex">
+              Read more
+              <ion-icon style="padding-left: 5px; font-size: 16px;" name="arrow-forward" aria-hidden="true"></ion-icon>
+            </p>
+          </div>
+        </div>
+      </div>
+      <span class="divider"></span>
+    </section>
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="logo-and-info">
+          <img src="./assets/images/logo.svg" alt="" style="margin-bottom: 28px;" />
+          <p class="footer-mail">companyinfo@mail.com</p>
+          <p class="footer-general">+098 765 4321</p>
+          <div class="footer-icons">
+            <div class="hover-orange facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="hover-orange twitter">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="hover-orange pinterest">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </div>
+            <div class="hover-orange dribble">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="links">
+          <p class="footer-title" style="margin: 12px 0;">Links</p>
+          <ul>
+            <li><a class="footer-general" href="#">Company Details </a></li>
+            <li><a class="footer-general" href="#">Our Newsfeed </a></li>
+            <li><a class="footer-general" href="#">Service Standard </a></li>
+            <li><a class="footer-general" href="#">Team Members </a></li>
+            <li><a class="footer-general" href="#">Pricing Standard </a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <p class="footer-title" style="margin: 12px 0;">Legal</p>
+          <ul>
+            <li><a class="footer-general" href="#">Agency Minimal </a></li>
+            <li><a class="footer-general" href="#">Creative Agency </a></li>
+            <li><a class="footer-general" href="#">Creative Layout </a></li>
+            <li><a class="footer-general" href="#">Dark Layout </a></li>
+            <li><a class="footer-general" href="#">FAQ with Filter </a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <p class="footer-title" style="margin: 12px 0;">Projects</p>
+          <ul>
+            <li><a class="footer-general" href="#">Projects Common </a></li>
+            <li><a class="footer-general" href="#">Projects Creative </a></li>
+            <li><a class="footer-general" href="#">Projects Standard </a></li>
+            <li><a class="footer-general" href="#">Dark Layout </a></li>
+            <li><a class="footer-general" href="#">eCommerce </a></li>
+          </ul>
+        </div>
+      </div>
+      <span class="divider"></span>
+    </footer>
+  </div>
+</body>
+
+</html>

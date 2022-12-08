@@ -1,0 +1,10 @@
+@media  screen and (max-width:1218px) {
+    .titles {
+        grid-template-columns: 400px 400px;
+    }
+}
+@media  screen and (max-width:840px) {
+    .titles {
+        grid-template-columns: 400px;
+    }
+}

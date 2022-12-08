@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <style>
+            .underline {
+                position:relative;
+            }
+            .underline:after{
+                content: "";
+                position:absolute;
+                bottom:-8px;
+                left:0;
+                width:50px;/* adjust the width of underline as you like*/
+                border-bottom:5px solid black;/* adjust the underline width and color as you like*/
+            }
+        </style>
+    </head>
+    <body>
+        <p>hello <span class="underline">world</span></p>
+    </body>
+</html>
