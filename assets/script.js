@@ -1,6 +1,5 @@
 console.log('project started on 5th of december 2022')
 console.log('project ended on 8th december 2022')
-alert('this website is not fully resposive made only for laptops and mobile screen size.')
 const addEventOnElem = function (elem,type, callback) {
     if (elem.length > 1) {
         for(let i = 0; i<elem.length;i++) {
